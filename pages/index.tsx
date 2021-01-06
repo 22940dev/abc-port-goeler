@@ -2,12 +2,27 @@ export default function Home() {
     return (
         <>
             <h1>Hi, I'm Patrick Goeler</h1>
-            <h2>H2</h2>
-            <h3>H3</h3>
-            <h4>H$</h4>
-            <h5>H5</h5>
-            <h6>H6</h6>
-            <p>Paragraph</p>
+            <p>
+                I'm a web developer currently finishing my master thesis at the University of
+                Mannheim. Additionally I work as a Software Engineer at Aioneers 👨‍💻.
+            </p>
+            <h2>Projects</h2>
+            <h2>Timeline</h2>
+            <h3>2020</h3>
+            <ul>
+                <li>Software Engineer @ Apliconus</li>
+                <li>Software Engineer @ Sovanta</li>
+            </ul>
+            <h3>2019</h3>
+            <ul>
+                <li>Software Engineer @ Apliconus</li>
+                <li>Software Engineer @ Sovanta</li>
+            </ul>
+            <h3>2018</h3>
+            <ul>
+                <li>Software Engineer @ Apliconus</li>
+                <li>Software Engineer @ Sovanta</li>
+            </ul>
         </>
     )
 }
