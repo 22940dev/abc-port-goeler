@@ -1,4 +1,3 @@
 export default function Home() {
-    const test = 0
-    return <div>Home</div>
+    return <div className="text-red-500">Home</div>
 }
