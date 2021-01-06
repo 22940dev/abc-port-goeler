@@ -5,10 +5,11 @@ import MDXComponents from "@/components/mdx/Index"
 import BlogSeo from "@/components/BlogSeo"
 import { format, parseISO } from "date-fns"
 import { MdxRemote } from "next-mdx-remote/types"
+import { FrontMatter } from "@/lib/interfaces"
 
 type Props = {
     mdxSource: MdxRemote.Source
-    frontMatter: any
+    frontMatter: FrontMatter
 }
 
 export default function Post({ mdxSource, frontMatter }: Props) {
@@ -18,7 +19,13 @@ export default function Post({ mdxSource, frontMatter }: Props) {
 
     return (
         <>
-            <BlogSeo url={`https://leerob.io/blog/${frontMatter.slug}`} {...frontMatter} />
+            <BlogSeo
+                url={`https://leerob.io/blog/${frontMatter.slug}`}
+                image={frontMatter.image}
+                publishedAt={frontMatter.publishedAt}
+                summary={frontMatter.summary}
+                title={frontMatter.title}
+            />
             <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
                 <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
                     {frontMatter.title}
@@ -33,7 +40,6 @@ export default function Post({ mdxSource, frontMatter }: Props) {
                             className="rounded-full"
                         />
                         <div className="text-sm text-gray-700 dark:text-gray-300 ml-2">
-                            {frontMatter.by}
                             {"Patrick Goeler / "}
                             {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
                         </div>
