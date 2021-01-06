@@ -44,7 +44,9 @@ export default function Post({ mdxSource, frontMatter }: Props) {
                         {/* <ViewCounter slug={frontMatter.slug} /> */}
                     </div>
                 </div>
-                <div className="max-w-none w-full">{content}</div>
+                <div className="max-w-none w-full prose lg:prose-lg dark:prose-light">
+                    {content}
+                </div>
                 {/* <div className="mt-8">
                     <Subscribe />
                 </div> */}

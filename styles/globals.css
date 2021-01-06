@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .text-secondary {
+        @apply text-gray-600 dark:text-gray-400;
+    }
+}
+
 ::selection {
     background-color: #47a3f3;
     color: #fefefe;

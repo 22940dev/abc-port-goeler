@@ -10,9 +10,9 @@ export default function Nav() {
                 <Link href="/">
                     <a className="p-1 sm:p-4">Home</a>
                 </Link>
-                <Link href="/dashboard">
+                {/* <Link href="/dashboard">
                     <a className="p-1 sm:p-4">Dashboard</a>
-                </Link>
+                </Link> */}
                 <Link href="/blog">
                     <a className="p-1 sm:p-4">Blog</a>
                 </Link>
