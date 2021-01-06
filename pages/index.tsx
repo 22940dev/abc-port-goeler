@@ -1,3 +1,4 @@
 export default function Home() {
-  return <div>Home</div>;
+    const test = 0
+    return <div>Home</div>
 }
