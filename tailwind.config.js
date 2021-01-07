@@ -11,6 +11,16 @@ module.exports = {
         },
         extend: {
             typography: (theme) => ({
+                DEFAULT: {
+                    css: {
+                        "code::before": {
+                            content: '""',
+                        },
+                        "code::after": {
+                            content: '""',
+                        },
+                    },
+                },
                 light: {
                     css: [
                         {

@@ -68,7 +68,7 @@ export default function ProjectCard({ title, description, href, icon }: Props) {
                         >
                             <g
                                 transform="translate(0.000000,180.000000) scale(0.100000,-0.100000)"
-                                fill="#000000"
+                                fill="currentColor"
                                 stroke="none"
                             >
                                 <path
@@ -93,9 +93,9 @@ c-65 0 -121 4 -125 10 -13 22 153 299 286 476 227 303 467 533 759 730 l125
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                             className="h-8 w-8 min-w-sm text-gray-900 dark:text-gray-100"
                         >
                             <path d="M3 18v-6a9 9 0 0 1 18 0v6" />

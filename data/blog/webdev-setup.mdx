@@ -1,0 +1,176 @@
+---
+title: "The Perfect Web Development Setup for Windows in 2021"
+publishedAt: "2020-01-07"
+summary: "Learn how to setup Windows Terminal with WSL 2 to make the perfect Web Development setup on Windows 10."
+image: "/static/images/banner.jpg"
+---
+
+> This article describes how the Windows Subsystem for Linux Version 2 can be used to install Ubuntu and the Windows Terminal to make Web Development more pleasant on Windows. Additionally this article will go over basic installations to get started like the Node Version Manager.
+
+## Activate WSL
+
+### Easy Mode
+
+If your Windows version is up to date you should be able to open CMD with admin privileges and type `wsl.exe --install`. However you need a Windows Insider build (OS build20262 or higher) for this to work. So you will likely have to install this [manually](#id). This command will:
+
+-   enable the WSL Windows feature
+-   Download and install the latest Linux kernel
+-   Set the WSL version 2 as the default
+-   Downloads a Linux distribution (default is Ubuntu) and installs it
+    -   To install another distribution try `wsl --list --online` to see available distributions and use this command to specify the distribution `wsl --install -d <Distribution Name>`
+
+You now have successfully installed Linux on Windows. 🎉
+
+### Manual Installation
+
+Enable the Windows Subsystem for Linux using this command in Powershell with Admin privileges:
+
+```powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
+
+If you are on a somewhat recent version of Windows you should be able to install version 2 of the WSL which brings a lot of performance improvements. For that to work you need to enable another Windows feature with:
+
+```powershell
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+Restart your computer now and come back once it's done.
+
+Next, you need to install the latest Linux kernal package which you can find [here](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi). Install it once the download has finished.
+
+Finally, in an admin Powershell again run this command to set the default WSL version to version 2.
+
+```powershell
+wsl --set-default-version 2
+```
+
+Next, you can install the WSL distribution of your choice. I use Ubuntu 20.04 LTS which can also be found in the [Microsoft Store](https://www.microsoft.com/store/productId/9N6SVWS3RX71). Once installed, run the distribution and it will install additional files and set up your username and password.
+
+You now have successfully installed Linux on Windows. 🎉
+
+## Windows Terminal
+
+To make life easier we can use the Windows Terminal app to make navigating the command line more pleasant.
+
+Open the _Microsoft Store_ and search for "Windows Terminal" or use this [link](https://www.microsoft.com/store/productId/9N0DX20HK701).
+
+To set Ubuntu as the default when opening Windows Terminal open the Settings (CTRL-Komma) and look for Ubuntu in the profiles list.
+
+```json
+{
+    "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+    "hidden": false,
+    "name": "Ubuntu-20.04",
+    "source": "Windows.Terminal.Wsl"
+}
+```
+
+Copy the guid and paste it as the default profile at top of the file.
+
+```json
+"defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+```
+
+### Theme and Font
+
+If you want you can adjust the font and color theme of Windows Terminal. I use the Cascadia Code font everywhere which supports Powerline Glyphs. This is quite handy when using some zsh themes. You can download the font [here](https://github.com/microsoft/cascadia-code/releases). Extract the files and install the four font files from the TTF folder. After that you can change the font family in the Windows Terminal settings.
+
+```json
+"profiles": {
+    "defaults": {
+      // Put settings here that you want to apply to all profiles.
+      "fontFace": "Cascadia Code PL"
+    },
+		...
+}
+```
+
+I also use the [Dracula theme](https://draculatheme.com/) pretty much everywhere. If you want you can add the color scheme to the settings like this:
+
+```json
+"profiles": {
+			...
+},
+"schemes": [
+    {
+      "name": "Dracula",
+      "cursorColor": "#F8F8F2",
+      "selectionBackground": "#44475A",
+      "background": "#282A36",
+      "foreground": "#F8F8F2",
+      "black": "#21222C",
+      "blue": "#BD93F9",
+      "cyan": "#8BE9FD",
+      "green": "#50FA7B",
+      "purple": "#FF79C6",
+      "red": "#FF5555",
+      "white": "#F8F8F2",
+      "yellow": "#F1FA8C",
+      "brightBlack": "#6272A4",
+      "brightBlue": "#D6ACFF",
+      "brightCyan": "#A4FFFF",
+      "brightGreen": "#69FF94",
+      "brightPurple": "#FF92DF",
+      "brightRed": "#FF6E6E",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FFFFA5"
+    }
+],
+```
+
+Now you can apply the color scheme just like the font earlier.
+
+```json
+"profiles": {
+    "defaults": {
+      // Put settings here that you want to apply to all profiles.
+			"colorScheme": "Dracula",
+      "fontFace": "Cascadia Code PL"
+    },
+		...
+}
+```
+
+## Installing Zsh and oh my zsh
+
+In order to use oh my zsh the Z shell needs to be installed and set as the default shell first.
+
+```bash
+sudo apt install zsh
+```
+
+Verify the installation with `zsh --version` and set it as the default shell:
+
+```bash
+chsh -s $(which zsh)
+```
+
+Now close and reopen Windows Terminal and zsh should be active (verify with `echo $SHELL`).
+
+To install oh my zsh run this command:
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+And this should be everything to get started with oh my zsh. You can set a theme or add plugins by editing `~/.zshrc`. I'm running the "agnoster" theme at the moment.
+
+## Node Version Manager
+
+Everybody who worked with Node in the past knows that different node versions can sometimes be a pain. The Node Version Manager makes it easy to switch between Node versions.
+
+Simply run this command `curl -o- [https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh](https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh) | bash` and add this to `~/.zshrc`:
+
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+Restart the terminal or `source ~/.zshrc` and check the nvm installation with `nvm -v`. If everything worked you can run `nvm install node` to install the latest version.
+
+Optionally you can install yarn with `npm install -g yarn`.
+
+## VS Code Plugin
+
+The final step is to install the **Remote - WSL** extension for VS Code. This will enable you to open folders from within WSL in VS Code.

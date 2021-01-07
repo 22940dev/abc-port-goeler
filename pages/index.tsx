@@ -64,6 +64,8 @@ export default function Home() {
             </Title>
             <ul>
                 <li>🥏 Started playing Disc Golf</li>
+                <li>🧀 Trip to the Netherlands</li>
+                <li>🚢 Trip to Denmark</li>
                 <li>🤘 Summer Breeze cancelled so we created our own small scale festival</li>
                 <li>👨‍💻 Software Engineer @Aioneers</li>
                 <li>👨‍💻 Software Engineer @Yasoon</li>
