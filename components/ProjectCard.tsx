@@ -1,8 +1,10 @@
+import Title from "./Title"
+
 type Props = {
     title: string
     description: string
     href: string
-    icon?: "musicmash"
+    icon?: "musicmash" | "launchx" | "flute"
 }
 
 export default function ProjectCard({ title, description, href, icon }: Props) {
@@ -56,10 +58,56 @@ export default function ProjectCard({ title, description, href, icon }: Props) {
                         </svg>
                     </div>
                 )}
+
+                {icon === "launchx" && (
+                    <div className="h-8 w-8 ml-2 mr-4">
+                        <span className="sr-only">LaunchX</span>
+                        <svg
+                            className="h-8 w-8 min-w-sm text-gray-900 dark:text-gray-100"
+                            viewBox="0 0 180.000000 180.000000"
+                        >
+                            <g
+                                transform="translate(0.000000,180.000000) scale(0.100000,-0.100000)"
+                                fill="#000000"
+                                stroke="none"
+                            >
+                                <path
+                                    d="M0 900 l0 -900 900 0 900 0 0 900 0 900 -900 0 -900 0 0 -900z m644
+463 l195 -207 -66 -73 c-36 -40 -69 -73 -74 -73 -6 0 -356 370 -441 466 -15
+17 -18 30 -13 58 l7 36 99 0 98 0 195 -207z m936 198 c0 -5 -51 -48 -112 -94
+-333 -251 -609 -565 -850 -967 -42 -69 -87 -149 -102 -177 l-26 -53 -120 0
+c-65 0 -121 4 -125 10 -13 22 153 299 286 476 227 303 467 533 759 730 l125
+84 83 0 c45 0 82 -4 82 -9z m-289 -905 c247 -268 294 -323 291 -345 -5 -51 -6
+-51 -109 -50 l-98 0 -220 235 c-121 129 -237 254 -258 278 l-37 44 62 80 c35
+45 66 80 69 79 3 -1 138 -146 300 -321z"
+                                />
+                            </g>
+                        </svg>
+                    </div>
+                )}
+
+                {icon === "flute" && (
+                    <div className="h-8 w-8 ml-2 mr-4">
+                        <span className="sr-only">Floetenbot</span>
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            className="h-8 w-8 min-w-sm text-gray-900 dark:text-gray-100"
+                        >
+                            <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                            <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                        </svg>
+                    </div>
+                )}
+
                 <div>
-                    <h4 className="text-lg font-bold tracking-tight text-gray-900 dark:text-gray-100 no-underline">
+                    <Title variant="h4" thin>
                         {title}
-                    </h4>
+                    </Title>
                     <p className="leading-5 text-gray-700 dark:text-gray-300">{description}</p>
                 </div>
             </div>

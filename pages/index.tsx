@@ -32,17 +32,41 @@ export default function Home() {
                 href="https://music-mash.netlify.app/"
                 icon="musicmash"
             />
+            <ProjectCard
+                title="Flötenbot"
+                description="Self-hosted Discord Bot that can play music from Spotify and Youtube. By self hosting the bitrate is higher than the one of other public bots which was a pain point for us."
+                href="https://github.com/patrickgoeler/floetenbot/"
+                icon="flute"
+            />
+            <ProjectCard
+                title="LaunchX"
+                description="Shows upcoming SpaceX launches in an easy fashion."
+                href="https://launchx.space/"
+                icon="launchx"
+            />
 
             <Title variant="h2" className="mb-4 mt-8">
                 Timeline
             </Title>
 
             <Title variant="h3" className="mb-4">
+                2021
+            </Title>
+            <ul>
+                <li>✏ Start my master thesis</li>
+                <li>😎 Launch this website</li>
+            </ul>
+
+            <Divider className="my-8" />
+
+            <Title variant="h3" className="mb-4">
                 2020
             </Title>
             <ul>
-                <li>Software Engineer @ Apliconus</li>
-                <li>Software Engineer @ Sovanta</li>
+                <li>🥏 Started playing Disc Golf</li>
+                <li>🤘 Summer Breeze cancelled so we created our own small scale festival</li>
+                <li>👨‍💻 Software Engineer @Aioneers</li>
+                <li>👨‍💻 Software Engineer @Yasoon</li>
             </ul>
 
             <Divider className="my-8" />
@@ -51,8 +75,12 @@ export default function Home() {
                 2019
             </Title>
             <ul>
-                <li>Software Engineer @ Apliconus</li>
-                <li>Software Engineer @ Sovanta</li>
+                <li>✏ Start Master Degree in Business Informatics @Uni Mannheim</li>
+                <li>🎺 Snarky Puppy Concert</li>
+                <li>🤘 Summer Breeze Festival</li>
+                <li>🥃 Trip to Scotland</li>
+                <li>👨‍🎓 Bachelor Degree in Business Informatics @Uni Mannheim</li>
+                <li>⛷ Trip to Switzerland</li>
             </ul>
 
             <Divider className="my-8" />
@@ -61,8 +89,52 @@ export default function Home() {
                 2018
             </Title>
             <ul>
-                <li>Software Engineer @ Apliconus</li>
-                <li>Software Engineer @ Sovanta</li>
+                <li>👨‍💻 Software Engineer @Sovanta</li>
+                <li>🤘 Summer Breeze Festival</li>
+            </ul>
+
+            <Divider className="my-8" />
+
+            <Title variant="h3" className="mb-4">
+                2017
+            </Title>
+            <ul>
+                <li>☕ One Semester in Linköping, Sweden</li>
+                <li>🎡 Trip to London</li>
+                <li>🤘 Avenged Sevenfold & Disturbed Concert</li>
+            </ul>
+
+            <Divider className="my-8" />
+
+            <Title variant="h3" className="mb-4">
+                2016
+            </Title>
+            <ul>
+                <li>🤘 Summer Breeze Festival</li>
+                <li>🐶 Welcomed a new family member</li>
+                <li>✈ Trip to the USA</li>
+                <li>👨‍💻 Software Engineer @APLICONUS</li>
+                <li>🥃 Trip to Scotland</li>
+            </ul>
+
+            <Divider className="my-8" />
+
+            <Title variant="h3" className="mb-4">
+                2015
+            </Title>
+            <ul>
+                <li>✏ Start Bachelor Degree in Business Informatics @Uni Mannheim</li>
+                <li>🤘 Summer Breeze Festival</li>
+                <li>👨‍🎓 Finish School</li>
+            </ul>
+
+            <Divider className="my-8" />
+
+            <Title variant="h3" className="mb-4">
+                2013
+            </Title>
+            <ul>
+                <li>🤘 Summer Breeze Festival</li>
             </ul>
         </>
     )
