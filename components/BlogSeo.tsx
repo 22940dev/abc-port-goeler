@@ -11,14 +11,14 @@ type Props = {
 export default function BlogSeo({ title, summary, publishedAt, url, image }: Props) {
     const date = new Date(publishedAt).toISOString()
     const featuredImage = {
-        url: `https://leerob.io${image}`,
+        url: `https://pgvr.dev${image}`,
         alt: title,
     }
 
     return (
         <>
             <NextSeo
-                title={`${title} – Lee Robinson`}
+                title={`${title} – Patrick Goeler`}
                 description={summary}
                 canonical={url}
                 openGraph={{
@@ -33,13 +33,13 @@ export default function BlogSeo({ title, summary, publishedAt, url, image }: Pro
                 }}
             />
             <ArticleJsonLd
-                authorName="Lee Robinson"
+                authorName="Patrick Goeler"
                 dateModified={date}
                 datePublished={date}
                 description={summary}
                 images={[featuredImage.url]}
-                publisherLogo="/static/favicons/android-chrome-192x192.png"
-                publisherName="Lee Robinson"
+                publisherLogo="/static/icons/android-chrome-192x192.png"
+                publisherName="Patrick Goeler"
                 title={title}
                 url={url}
             />

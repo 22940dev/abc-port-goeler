@@ -6,9 +6,9 @@ export default function About() {
         <div className="prose dark:prose-light lg:prose-lg">
             <NextSeo
                 title="About Me - Patrick Goeler"
-                canonical="https://leerob.io/about"
+                canonical="https://pgvr.dev/about"
                 openGraph={{
-                    url: "https://leerob.io/about",
+                    url: "https://pgvr.dev/about",
                     title: "About Me – Patrick Goeler",
                 }}
             />

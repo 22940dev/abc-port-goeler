@@ -20,7 +20,7 @@ export default function Post({ mdxSource, frontMatter }: Props) {
     return (
         <>
             <BlogSeo
-                url={`https://leerob.io/blog/${frontMatter.slug}`}
+                url={`https://pgvr.dev/blog/${frontMatter.slug}`}
                 image={frontMatter.image}
                 publishedAt={frontMatter.publishedAt}
                 summary={frontMatter.summary}

@@ -10,7 +10,7 @@ type Props = {
 }
 
 export default function Blog({ posts }: Props) {
-    const url = "https://leerob.io/blog"
+    const url = "https://pgvr.dev/blog"
     const title = "Blog – Patrick Goeler"
     const description = "Let's talk about web development trends, tips and tricks"
     const filteredBlogPosts = posts.sort(
