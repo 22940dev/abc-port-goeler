@@ -46,7 +46,6 @@ export default function Home() {
             <Title variant="h2" className="mb-4 mt-8">
                 Timeline
             </Title>
-
             <Title variant="h3" className="mb-4">
                 2021
             </Title>
