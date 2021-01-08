@@ -1,5 +1,5 @@
 const title = "Patrick Goeler – Web Developer"
-const description = "Full Stack Web Developer | Business Informatics Student | Space Nerd"
+const description = "Full Stack Web Developer | Business Informatics Student | Space Enthusiast"
 
 const SEO = {
     title,
