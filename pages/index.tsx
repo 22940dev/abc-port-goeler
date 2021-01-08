@@ -6,9 +6,7 @@ import Title from "@/components/Title"
 export default function Home() {
     return (
         <>
-            <h1 className="text-3xl md:text-5xl tracking-tight font-bold mb-4">
-                Hi, I'm Patrick Goeler
-            </h1>
+            <h1 className="text-3xl md:text-5xl tracking-tight font-bold mb-4">Hi, I'm Patrick</h1>
             <p className="mb-16 text-secondary">
                 I'm a web developer currently finishing my master thesis at the University of
                 Mannheim. Additionally I work as a Software Engineer at Aioneers 👨‍💻.
@@ -18,9 +16,9 @@ export default function Home() {
                 Popular Posts
             </Title>
             <BlogListItem
-                title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-                summary="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
-                slug="style-guides-component-libraries-design-systems"
+                title="The Perfect Web Development Setup for Windows in 2021"
+                summary="Learn how to setup Windows Terminal with WSL 2 to make the perfect Web Development setup on Windows 10."
+                slug="webdev-setup"
             />
 
             <Title variant="h2" className="mb-4 mt-8">

@@ -14,10 +14,12 @@ export default function About() {
             />
             <h1>About Me</h1>
             <p>
-                Hey I'm Patrick, a business informatics student from Mannheim, Germany. Besides my
-                studies I work for <Link href="https://aioneers.com/">Aioneers</Link> as a Software
-                Engineer 👨‍💻. My studies are coming to an end though, as I'm working on my master
-                thesis in the area of microservices.
+                Hey I'm Patrick Goeler, a business informatics student from Mannheim, Germany.
+                Besides my studies I work for <Link href="https://aioneers.com/">Aioneers</Link> as
+                a Software Engineer 👨‍💻. My studies are coming to an end though, as I'm working on my
+                master thesis in the area of microservices. Fun fact: My full name is "Patrick
+                Goeler von Ravensburg", hence the domain name, but that's way too long for any
+                username 😂.
             </p>
             <h2>Work Experience</h2>
             <p>
