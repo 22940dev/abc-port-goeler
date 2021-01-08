@@ -27,7 +27,7 @@ export default function Home() {
             <ProjectCard
                 title="Music Mash"
                 description="Invite other people and this app generates a Spotify playlist according to the top tracks of each one."
-                href="https://music-mash.netlify.app/"
+                href="https://music.pgvr.dev/"
                 icon="musicmash"
             />
             <ProjectCard
@@ -39,7 +39,7 @@ export default function Home() {
             <ProjectCard
                 title="LaunchX"
                 description="Shows upcoming SpaceX launches in an easy fashion."
-                href="https://launchx.space/"
+                href="https://space.pgvr.dev/"
                 icon="launchx"
             />
 
