@@ -9,8 +9,10 @@ import MDXComponents from "@/components/mdx/Index"
 import { MDXProvider } from "@mdx-js/react"
 import { DefaultSeo } from "next-seo"
 import SEO from "../next-seo.config"
+import { useAnalytics } from "@/lib/analytics"
 
 export default function App({ Component, pageProps }: AppProps) {
+    useAnalytics()
     return (
         <ThemeProvider attribute="class">
             <MDXProvider components={MDXComponents}>
