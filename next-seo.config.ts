@@ -1,19 +1,19 @@
-const title = "Patrick Goeler – Web Developer"
+const title = "Coding Castle – Web Development"
 const description = "Full Stack Web Developer | Business Informatics Student | Space Enthusiast"
 
 const SEO = {
     title,
     description,
-    canonical: "https://pgvr.dev",
+    canonical: "https://codingcastle.dev",
     openGraph: {
         type: "website",
         locale: "en_IE",
-        url: "https://pgvr.dev",
+        url: "https://codingcastle.dev",
         title,
         description,
         images: [
             {
-                url: "https://pgvr.dev/static/images/banner.png",
+                url: "https://codingcastle.dev/static/images/banner.png",
                 alt: title,
                 width: 1280,
                 height: 720,
@@ -21,8 +21,8 @@ const SEO = {
         ],
     },
     twitter: {
-        handle: "@patrickgoeler",
-        site: "@patrickgoeler",
+        handle: "@coding_castle",
+        site: "@coding_castle",
         cardType: "summary_large_image",
     },
 }

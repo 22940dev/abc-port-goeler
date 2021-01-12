@@ -20,7 +20,7 @@ export default function Post({ mdxSource, frontMatter }: Props) {
     return (
         <>
             <BlogSeo
-                url={`https://pgvr.dev/blog/${frontMatter.slug}`}
+                url={`https://codingcastle.dev/blog/${frontMatter.slug}`}
                 image={frontMatter.image}
                 publishedAt={frontMatter.publishedAt}
                 summary={frontMatter.summary}
@@ -33,14 +33,14 @@ export default function Post({ mdxSource, frontMatter }: Props) {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2 mb-8">
                     <div className="flex items-center">
                         <Image
-                            alt="Patrick Goeler"
+                            alt="Patrick Göler von Ravensburg"
                             height={24}
                             width={24}
                             src="/avatar.jpg"
                             className="rounded-full"
                         />
                         <div className="text-sm text-gray-700 dark:text-gray-300 ml-2">
-                            {"Patrick Goeler / "}
+                            {"Patrick Göler von Ravensburg / "}
                             {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
                         </div>
                     </div>

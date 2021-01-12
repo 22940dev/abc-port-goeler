@@ -5,21 +5,20 @@ export default function About() {
     return (
         <div className="prose dark:prose-light lg:prose-lg">
             <NextSeo
-                title="About Me - Patrick Goeler"
-                canonical="https://pgvr.dev/about"
+                title="About Me - Coding Castle"
+                canonical="https://codingcastle.dev/about"
                 openGraph={{
-                    url: "https://pgvr.dev/about",
-                    title: "About Me – Patrick Goeler",
+                    url: "https://codingcastle.dev/about",
+                    title: "About Me – Coding Castle",
                 }}
             />
             <h1>About Me</h1>
             <p>
-                Hey I'm Patrick Goeler, a business informatics student from Mannheim, Germany.
-                Besides my studies I work for <Link href="https://aioneers.com/">Aioneers</Link> as
-                a Software Engineer 👨‍💻. My studies are coming to an end though, as I'm working on my
-                master thesis in the area of microservices. Fun fact: My full name is "Patrick
-                Goeler von Ravensburg", hence the domain name, but that's way too long for any
-                username 😂.
+                Hey I'm Patrick Göler von Ravensburg, a business informatics student from Mannheim,
+                Germany. Besides my studies I work for{" "}
+                <Link href="https://aioneers.com/">Aioneers</Link> as a Software Engineer 👨‍💻. My
+                studies are coming to an end though, as I'm working on my master thesis in the area
+                of microservices.
             </p>
             <h2>Work Experience</h2>
             <p>

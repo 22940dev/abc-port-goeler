@@ -10,8 +10,8 @@ type Props = {
 }
 
 export default function Blog({ posts }: Props) {
-    const url = "https://pgvr.dev/blog"
-    const title = "Blog – Patrick Goeler"
+    const url = "https://codingcastle.dev/blog"
+    const title = "Blog – Coding Castle"
     const description = "Let's talk about web development trends, tips and tricks"
     const filteredBlogPosts = posts.sort(
         (a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt)),

@@ -79,11 +79,7 @@ export default function Footer() {
                     </svg>
                 </Link>
             </div>
-            <p>© Patrick Goeler</p>
-            <p className="prose dark:prose-light text-center">
-                Thanks to <Link href="https://leerob.io">Lee</Link> for the inspiration and
-                tutorials!
-            </p>
+            <p>© Patrick Göler von Ravensburg</p>
         </footer>
     )
 }

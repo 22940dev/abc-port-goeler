@@ -9,12 +9,11 @@
 }
 
 ::selection {
-    background-color: #47a3f3;
+    background-color: #eab308;
     color: #fefefe;
 }
 
 html {
-    min-width: 360px;
     scroll-behavior: smooth;
 }
 
@@ -32,17 +31,12 @@ html {
 
 .prose img {
     /* Don't apply styles to next/image */
-    margin: 0 !important;
+    margin: 0 auto !important;
 }
 
 .lg\:prose-lg img {
     /* Don't apply styles to next/image */
-    margin: 0 !important;
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-    @apply text-gray-800 dark:text-gray-50;
+    margin: 0 auto !important;
 }
 
 pre::-webkit-scrollbar {
@@ -62,16 +56,4 @@ pre {
     margin-top: 0 !important;
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
-}
-
-.mdx-marker {
-    @apply block -mx-4 px-4 bg-gray-100 dark:bg-gray-800 border-l-4 border-blue-500;
-}
-
-.prose pre {
-    @apply bg-gray-50 border border-gray-200 dark:border-gray-700 dark:bg-gray-900 m-0;
-}
-
-.prose code {
-    @apply text-gray-800 dark:text-gray-200 px-1 py-0.5 border border-gray-100 dark:border-gray-800 rounded-md bg-gray-100 dark:bg-gray-900;
 }

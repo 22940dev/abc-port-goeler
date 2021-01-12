@@ -6,18 +6,21 @@ import Title from "@/components/Title"
 export default function Home() {
     return (
         <>
-            <h1 className="text-3xl md:text-5xl tracking-tight font-bold mb-4">Hi, I'm Patrick</h1>
+            <h1 className="text-3xl md:text-5xl tracking-tight font-bold mb-4">
+                Welcome to the Coding Castle! 🏰
+            </h1>
             <p className="mb-16 text-secondary">
-                I'm a web developer currently finishing my master thesis at the University of
-                Mannheim. Additionally I work as a Software Engineer at Aioneers 👨‍💻.
+                My name is "Patrick Göler von Ravensburg" and I'm a web developer currently
+                finishing my master thesis at the University of Mannheim. Additionally I work as a
+                Software Engineer at Aioneers 👨‍💻.
             </p>
 
             <Title variant="h2" className="mb-4">
-                Popular Posts
+                New Posts
             </Title>
             <BlogListItem
-                title="The Perfect Web Development Setup for Windows in 2021"
-                summary="Learn how to setup Windows Terminal with WSL 2 to make the perfect Web Development setup on Windows 10."
+                title="How to get started with Web Development on Windows with the WSL in 2021"
+                summary="In this guide you will learn how to install what I consider to be close to the perfect web development setup for Windows. This includes using the Windows Subsystem for Linux, Windows Terminal, the Node Version Manager as well as some tips and tricks along the way."
                 slug="webdev-setup"
             />
 
@@ -27,7 +30,7 @@ export default function Home() {
             <ProjectCard
                 title="Music Mash"
                 description="Invite other people and this app generates a Spotify playlist according to the top tracks of each one."
-                href="https://music.pgvr.dev/"
+                href="https://music.codingcastle.dev/"
                 icon="musicmash"
             />
             <ProjectCard
@@ -39,7 +42,7 @@ export default function Home() {
             <ProjectCard
                 title="LaunchX"
                 description="Shows upcoming SpaceX launches in an easy fashion."
-                href="https://space.pgvr.dev/"
+                href="https://space.codingcastle.dev/"
                 icon="launchx"
             />
 
