@@ -1,5 +1,6 @@
 const title = "Coding Castle – Web Development"
-const description = "Full Stack Web Developer | Business Informatics Student | Space Enthusiast"
+const description =
+    "My name is Patrick Göler von Ravensburg and I'm a Full Stack Web Developer, Business Informatics Student and Space Enthusiast"
 
 const SEO = {
     title,
@@ -7,7 +8,7 @@ const SEO = {
     canonical: "https://codingcastle.dev",
     openGraph: {
         type: "website",
-        locale: "en_IE",
+        locale: "en_DE",
         url: "https://codingcastle.dev",
         title,
         description,

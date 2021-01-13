@@ -10,9 +10,9 @@ export default function Home() {
                 Welcome to the Coding Castle! 🏰
             </h1>
             <p className="mb-16 text-secondary">
-                My name is "Patrick Göler von Ravensburg" and I'm a web developer currently
-                finishing my master thesis at the University of Mannheim. Additionally I work as a
-                Software Engineer at Aioneers 👨‍💻.
+                My name is Patrick and I'm a web developer currently finishing my master thesis at
+                the University of Mannheim. Additionally I work as a Software Engineer at Aioneers
+                👨‍💻.
             </p>
 
             <Title variant="h2" className="mb-4">
