@@ -19,6 +19,11 @@ export default function Home() {
                 New Posts
             </Title>
             <BlogListItem
+                title="Build a Linktree clone in under 1 hour with Strapi, Next.js and GraphQL"
+                summary="Building a basic Linktree clone seems rather simple which is perfect for showcasing a bunch of technologies and how they work together. Strapi, GraphQL and Next.js are the main building blocks for this project while Tailwind and GraphQL Codegen help with efficiency and developer experience."
+                slug="linktree-clone"
+            />
+            <BlogListItem
                 title="How to get started with Web Development on Windows with the WSL in 2021"
                 summary="In this guide you will learn how to install what I consider to be close to the perfect web development setup for Windows. This includes using the Windows Subsystem for Linux, Windows Terminal, the Node Version Manager as well as some tips and tricks along the way."
                 slug="webdev-setup"
