@@ -18,6 +18,12 @@ export default function Home() {
             <Title variant="h2" className="mb-4">
                 New Posts
             </Title>
+
+            <BlogListItem
+                title="Spice up your Discord game with a custom Music Bot"
+                summary="Learn how to build your very own Discord Music Bot from scratch using Typescript and Discord.js."
+                slug="discord-bot"
+            />
             <BlogListItem
                 title="Build a Linktree clone in under 1 hour with Strapi, Next.js and GraphQL"
                 summary="Building a basic Linktree clone seems rather simple which is perfect for showcasing a bunch of technologies and how they work together. Strapi, GraphQL and Next.js are the main building blocks for this project while Tailwind and GraphQL Codegen help with efficiency and developer experience."
