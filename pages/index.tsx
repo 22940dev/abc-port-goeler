@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <>
             <h1 className="text-3xl md:text-5xl tracking-tight font-bold mb-4">
-                Welcome to the Coding Castle! 🏰
+                Welcome to the Coding 🏰!
             </h1>
             <p className="mb-16 text-secondary">
                 My name is Patrick and I'm a web developer currently finishing my master thesis at

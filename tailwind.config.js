@@ -5,8 +5,7 @@ module.exports = {
     darkMode: "class", // or 'media' or 'class'
     theme: {
         fontFamily: {
-            sans: ["Poppins", ...defaultTheme.fontFamily.sans],
-            serif: [...defaultTheme.fontFamily.serif],
+            sans: ["Inter", ...defaultTheme.fontFamily.sans],
             mono: [...defaultTheme.fontFamily.mono],
         },
         extend: {
