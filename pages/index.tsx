@@ -75,9 +75,6 @@ export default function Home() {
             </Title>
             <ul>
                 <li>🥏 Started playing Disc Golf</li>
-                <li>🧀 Trip to the Netherlands</li>
-                <li>🚢 Trip to Denmark</li>
-                <li>🤘 Summer Breeze cancelled so we created our own small scale festival</li>
                 <li>👨‍💻 Software Engineer @Aioneers</li>
                 <li>👨‍💻 Software Engineer @Yasoon</li>
             </ul>
@@ -89,11 +86,7 @@ export default function Home() {
             </Title>
             <ul>
                 <li>✏ Start Master Degree in Business Informatics @Uni Mannheim</li>
-                <li>🎺 Snarky Puppy Concert</li>
-                <li>🤘 Summer Breeze Festival</li>
-                <li>🥃 Trip to Scotland</li>
                 <li>👨‍🎓 Bachelor Degree in Business Informatics @Uni Mannheim</li>
-                <li>⛷ Trip to Switzerland</li>
             </ul>
 
             <Divider className="my-8" />
@@ -103,7 +96,6 @@ export default function Home() {
             </Title>
             <ul>
                 <li>👨‍💻 Software Engineer @Sovanta</li>
-                <li>🤘 Summer Breeze Festival</li>
             </ul>
 
             <Divider className="my-8" />
@@ -113,8 +105,6 @@ export default function Home() {
             </Title>
             <ul>
                 <li>☕ One Semester in Linköping, Sweden</li>
-                <li>🎡 Trip to London</li>
-                <li>🤘 Avenged Sevenfold & Disturbed Concert</li>
             </ul>
 
             <Divider className="my-8" />
@@ -123,11 +113,8 @@ export default function Home() {
                 2016
             </Title>
             <ul>
-                <li>🤘 Summer Breeze Festival</li>
                 <li>🐶 Welcomed a new family member</li>
-                <li>✈ Trip to the USA</li>
                 <li>👨‍💻 Software Engineer @APLICONUS</li>
-                <li>🥃 Trip to Scotland</li>
             </ul>
 
             <Divider className="my-8" />
@@ -137,17 +124,7 @@ export default function Home() {
             </Title>
             <ul>
                 <li>✏ Start Bachelor Degree in Business Informatics @Uni Mannheim</li>
-                <li>🤘 Summer Breeze Festival</li>
                 <li>👨‍🎓 Finish School</li>
-            </ul>
-
-            <Divider className="my-8" />
-
-            <Title variant="h3" className="mb-4">
-                2013
-            </Title>
-            <ul>
-                <li>🤘 Summer Breeze Festival</li>
             </ul>
         </>
     )
