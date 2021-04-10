@@ -20,9 +20,9 @@ export default function Home() {
             </Title>
 
             <BlogListItem
-                title="Spice up your Discord game with a custom Music Bot"
-                summary="Learn how to build your very own Discord Music Bot from scratch using Typescript and Discord.js."
-                slug="discord-bot"
+                title="Quick Tip: Take advantage of the official Next.js examples"
+                summary="Have you ever spent too much time trying to set something up with Next.js? Hopefully this quick tip can help you in the future."
+                slug="quick-tip-nextjs"
             />
             <BlogListItem
                 title="Build a Linktree clone in under 1 hour with Strapi, Next.js and GraphQL"
